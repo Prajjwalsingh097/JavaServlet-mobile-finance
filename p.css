@@ -1,0 +1,251 @@
+#header1
+{
+position:relative;
+left:175px;
+width:500px;
+height:500px;
+background-color:grays;
+}
+#home1
+{
+  position:fixed;
+
+top:1px;
+width:1500px;
+height:120px;
+background-color:aliceblue;
+
+    
+}
+#header1 #head 
+{
+position:fixed;
+left:250px;
+top:50px;
+width:350;
+height:300px;
+background-color:dark;
+}
+#heaf
+{
+	Position:absolute;
+	left:350px;
+	top:10px;
+	color:gray;
+	size:200px;
+	
+}
+
+#reg
+{
+	position:absolute;
+	left:400px;
+	top:100px;
+	color:lightyellow;
+}#laptop
+{
+	position:absolute;
+	left:400px;
+	top:100px;
+	color:peru;
+}#tv
+{
+	position:absolute;
+	left:400px;
+	top:100px;
+	color:blue;
+}
+#reg #reg1
+{
+	position:absolute;
+	left:400px;
+	top:100px;
+	color:lightyellow;
+}
+#mobile 
+{
+color:lightcyan;
+right:500px;
+top:600px;
+	
+}
+
+#mobile #sub
+{
+	color:teal;
+	height:3em;
+	width:10em;
+	
+}#laptop1 #sub
+{
+	color:teal;
+	height:3em;
+	width:10em;
+	
+}
+#tv1 #sub
+{
+	color:teal;
+	height:3em;
+	width:10em;
+	
+}
+#mobile #home
+{
+	color:red;
+	height:3em;
+	width:10em;
+	
+}	
+#home
+{
+	color:red;
+	height:3em;
+	width:10em;
+	
+}	
+#m-fin
+{
+        background-color:dimgrey;
+        left:200px;
+        top:100px;
+	color:lightblue;
+	height:3em;
+	width:10em;
+	
+}	
+#c-fin
+{
+        background-color:dimgrey;
+        left:200px;
+        top:130px;
+	color:lightblue;
+	height:3em;
+	width:10em;
+	
+}	
+#tv-fin
+{
+        background-color:dimgrey;
+        left:200px;
+        top:160px;
+	color:lightblue;
+	height:3em;
+	width:10em;
+	
+}	
+#open
+{
+        background-color:dimgrey;
+        left:200px;
+        top:160px;
+	color:lightblue;
+	height:3em;
+	width:10em;
+	
+}	
+#service
+{
+    position:absolute;
+    left:200px;
+    top:150px;
+    background-image:"2.jpg";
+    color:aliceblue;
+}#service h2
+{
+     color:aliceblue;
+}
+
+#login
+{
+        background-color:lightslategray;
+	color:lightblue;
+	height:3em;
+	width:10em;
+	
+}	
+#mobile h2
+{
+	color:cornflowerblue;
+}
+nav{
+position:static;	
+height:42px;
+background-color:cornflowerblue;
+
+
+}
+#menubar{
+    position:fixed;
+    width:1500px;
+}
+nav ul{
+    position:static;
+	list-style:none;
+	
+}
+
+nav ul li a{
+    position:static;
+float:left;
+text-decoration:none;
+color:#FFFFFF;
+padding:0px 40px;
+text-align:center;
+line-height:42px;
+height:42px;
+
+}
+nav ul li a:hover{
+    position:static;
+	background-color:peru;
+	border-radius:7px;
+}
+
+
+	
+#header1 #head #login
+{
+	position:relative;
+	left:10px;
+	top:100px;
+	background-color:slateBlue;
+	color:white;
+	
+	
+}
+#header1 #head h1
+{
+	
+	position:relative;
+	color:transparent;
+    background:inherit;
+	
+}
+
+#head #login #login1{
+position:absolute;
+left:100px;
+top:100px;
+
+
+}
+#login2{
+
+	position:absolute;
+	left:400px;
+	color:lightyellow;
+
+}
+#slider
+{
+    color:teal;
+}
+#login1{
+
+	position:absolute;
+        top:100px;
+	left:400px;
+	color:lightyellow;
+
+}
