@@ -261,13 +261,13 @@ out.print("<h1 style="+"color:indigo;"+">               CUSTOMER DETAIL's :-");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-          out.print("&nbsp;&nbsp;&nbsp;&nbsp;ENTER OLD MOBILE NUMBER &nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;");
        
           out.print("&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
                     out.print(" <br><br>");
          
-          out.print("<form action="+"p.html"+">");
+          out.print("<form action="+"services.html"+">");
           
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
@@ -276,11 +276,27 @@ out.print("<h1 style="+"color:indigo;"+">               CUSTOMER DETAIL's :-");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-          out.print("&nbsp;&nbsp;<input type='submit'"+"value="+"HOME"+">");
+              out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+ out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+
+          out.print("&nbsp;&nbsp;<input type='submit'"+"value="+"BACK"+">");
           out.print("</form>");
        out.print("<form action="+"updatename.html"+">");
           
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+ out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");

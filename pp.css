@@ -1,3 +1,32 @@
+nav ul{
+    position:static;
+	list-style:none;
+	
+}
+
+nav ul li p1
+{
+    float:right;
+    color:#ffffff;
+    
+}
+
+nav ul li a{
+    position:static;
+float:left;
+text-decoration:none;
+color:#FFFFFF;
+padding:0px 40px;
+text-align:center;
+line-height:42px;
+height:42px;
+
+}
+nav ul li a:hover{
+    position:static;
+	background-color:peru;
+	border-radius:7px;
+}
 #header1
 {
 position:relative;
@@ -35,25 +64,7 @@ background-color:dark;
 	size:200px;
 	
 }
-#footer{
-    height:200px;
-    width:100%;
-    color:lightcyan;
-    background-color:darkcyan;
-    text-align: center;
-    position:absolute;
-    top:800px;
-    
-}#footer1{
-    height:150px;
-    width:100%;
-    color:lightcyan;
-    background-color:teal;
-    
-    position:absolute;
-    top:1000px;
-    
-}
+
 #reg
 {
 	position:absolute;
@@ -82,7 +93,7 @@ background-color:dark;
 }
 #mobile 
 {
-color:blue;
+color:lightcyan;
 right:500px;
 top:600px;
 	
@@ -124,7 +135,7 @@ top:600px;
 }	
 #m-fin
 {
-        background-color:blue;
+        background-color:dimgrey;
         left:200px;
         top:100px;
 	color:lightblue;
@@ -171,7 +182,7 @@ top:600px;
     color:aliceblue;
 }#service h2
 {
-     color:blue;
+     color:aliceblue;
 }
 
 #login
@@ -187,29 +198,24 @@ top:600px;
 	color:cornflowerblue;
 }
 nav{
+        left:400px;
+
 position:static;	
 height:42px;
 background-color:cornflowerblue;
 
 
 }
-
-#name
-{
-    color:yellowgreen;
-    
-}
-#name1
-{
-    
-    color:yellow;
-    
-}
 #menubar{
     position:fixed;
-    width:1500px;
+    left:400px;
+   width:1500px;
+
 }
 nav ul{
+    left:400px;
+   width:100px;
+
     position:static;
 	list-style:none;
 	
@@ -223,8 +229,13 @@ nav ul li p1
 }
 
 nav ul li a{
+    
+
     position:static;
-float:left;
+   width:100px;
+
+    left:400px;
+    float:left;
 text-decoration:none;
 color:#FFFFFF;
 padding:0px 40px;
@@ -234,8 +245,11 @@ height:42px;
 
 }
 nav ul li a:hover{
+ 
     position:static;
-	background-color:peru;
+
+     width:100px;
+background-color:peru;
 	border-radius:7px;
 }
 
@@ -285,4 +299,16 @@ top:100px;
 	left:400px;
 	color:lightyellow;
 
+}
+
+#name
+{
+    color:yellowgreen;
+    
+}
+#name1
+{
+    
+    color:teal;
+    
 }

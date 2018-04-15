@@ -39,7 +39,17 @@ public class log extends HttpServlet {
             
             if(name.equals("prxwal@gmail.com")&&pass.equals("8120998286"))
             {
-             response.sendRedirect("services.html");   
+             response.sendRedirect("servicesp.html");   
+            }
+            else
+            if(name.equals("deepak1998parmar@gmail.com")&&pass.equals("8982920182"))
+            {
+             response.sendRedirect("servicesd.html");   
+            }
+            else
+            if(name.equals("raviparmar881730@gmail.com")&&pass.equals("8817301560"))
+            {
+             response.sendRedirect("servicesr.html");   
             }
             else
             {

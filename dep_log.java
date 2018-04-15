@@ -6,18 +6,21 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.sql.*;
+
 /**
  *
  * @author DELL
  */
-@WebServlet(urlPatterns = {"/cuslogin"})
-public class cuslogin extends HttpServlet {
+@WebServlet(urlPatterns = {"/dep_log"})
+public class dep_log extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -28,13 +31,13 @@ public class cuslogin extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             
-          
-            String s=request.getParameter("mobile");
+            
+                  String s=request.getParameter("mobile");
            
            
                      try
@@ -85,6 +88,7 @@ out.print("<h1 style="+"color:indigo;"+">               CUSTOMER DETAIL's :-");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;:"+name);
+              
            out.print("<br><br>"); 
            out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
            out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
@@ -107,8 +111,8 @@ out.print("<h1 style="+"color:indigo;"+">               CUSTOMER DETAIL's :-");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:"+mobile);
-            out.print("<br><br>");
-            out.print(";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+               out.print(" <br><br>");
+            out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
             out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
             out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
             out.print("&nbsp;&nbsp;&nbsp;E-MAIL&nbsp;&nbsp;&nbsp;&nbsp;");
@@ -116,7 +120,7 @@ out.print("<h1 style="+"color:indigo;"+">               CUSTOMER DETAIL's :-");
             out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
             out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
             out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:"+email);
-          
+                      
           out.print("<br>");
           out.print("<br>");
           
@@ -128,6 +132,7 @@ out.print("<h1 style="+"color:indigo;"+">               CUSTOMER DETAIL's :-");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;:"+address);
+              
          out.print("<br>");out.print("<br>");out.print("<br>");
          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
@@ -246,9 +251,18 @@ out.print("<h1 style="+"color:indigo;"+">               CUSTOMER DETAIL's :-");
           out.print("<br>");
           out.print("<br>");
           out.print("</p>");
-          
-          out.print("<form action="+"p.html"+">");
-          
+                    out.print(" <br><br>");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;ENTER OLD MOBILE NUMBER &nbsp;&nbsp;&nbsp;");
+       
+          out.print("&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+                    out.print(" <br><br>");
+         
+          out.print("<form action="+"services.html"+">");
+               
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
@@ -256,9 +270,49 @@ out.print("<h1 style="+"color:indigo;"+">               CUSTOMER DETAIL's :-");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
           out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-          out.print("&nbsp;&nbsp;<input type='submit'"+"value="+"HOME"+">");
-    out.print("<p> * FOR ANY QUERY OR UPDATE VISIT TO OUR SERVICE CENTER</p>");
-      
+ out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;<input type='submit'"+"value="+"BACK"+">");
+          out.print("</form>");
+       out.print("<form action="+"depositer.html"+">");
+               
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+ out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          out.print("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+out.print("&nbsp;&nbsp;<input type='submit'"+"value="+"DEPOSIT"+">");
+          
           out.print("</form>");
           out.print("</body>");
           
@@ -292,29 +346,19 @@ out.print("<h1 style="+"color:indigo;"+">               CUSTOMER DETAIL's :-");
    
             
         }
-
-            
-            
-            
-            
-            
-            /* TODO output your page here.
-                     You may use following sample code. */
+            /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet cuslogin</title>");            
+            out.println("<title>Servlet dep_log</title>");            
             out.println("</head>");
             out.println("<body>");
-           /* out.println("<h1>Servlet cuslogin at " +
-            request.getContextPath() + "</h1>");
-            */out.println("</body>");
+             out.println("</body>");
             out.println("</html>");
         }
     }
 
-    /* <editor-fold defaultstate="collapsed" desc="HttpServlet 
-methods. Click on the + sign on the left to edit the code.">*/
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -324,7 +368,7 @@ methods. Click on the + sign on the left to edit the code.">*/
      * @throws IOException if an I/O error occurs
      */
     @Override
- protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
@@ -338,7 +382,7 @@ methods. Click on the + sign on the left to edit the code.">*/
      * @throws IOException if an I/O error occurs
      */
     @Override
-protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
